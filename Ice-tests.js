@@ -21,19 +21,19 @@ describe('Ice Cream Shop tests', function () {
     describe('Cone tests', function(){
         it('This test returns the amount of a Plain Cone ', function () {
             var testInstance = IceCreamFactory();
-            testInstance.contain("Plain Cone");
+            testInstance.contains("Plain Cone");
             assert.equal(testInstance.total(), 7);
 
         });
         it('This test returns the amount of a Sugar Cone ', function () {
             var testInstance = IceCreamFactory();
-            testInstance.contain("Sugar Cone");
+            testInstance.contains("Sugar Cone");
             assert.equal(testInstance.total(), 12);
 
         });
         it('This test returns the amount of a Paper Cup ', function () {
             var testInstance = IceCreamFactory();
-            testInstance.contain("Paper Cup");
+            testInstance.contains("Paper Cup");
             assert.equal(testInstance.total(), 15);
 
         });
