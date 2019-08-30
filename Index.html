@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ice Cream</title>
+    <link rel="stylesheet" href="Ice.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="center">
+            <h1 style="color:rgb(255, 255, 255)">Sir Steez's Ice Cream Shop</h1>
+        </div>
+        <div class="center row">
+            <h3 style="color:rgb(255, 255, 255)">Build Your Ice Cream Below</h3>
+            <div class="col-4">
+                <select id="flavourName" class="flavourDropDown" style="background:rgb(255, 255, 255)">
+                    <option name="flavourType" value="">Select flavour:</option>
+                    <option name="flavourType" value="Strawberry">Strawberry</option>
+                    <option name="flavourType" value="Chocolate">Chocolate</option>
+                    <option name="flavourType" value="Vanilla">Vanilla</option>
+                    <option name="flavourType" value="Oreo">Oreo</option>
+                    <option name="flavourType" value="Mint">Mint</option>
+                    <option name="flavourType" value="English Toffee">English Toffee</option>
+                    <option name="flavourType" value="BarOne">BarOne</option>
+                    <option name="flavourType" value="Tin Roof">Tin Roof</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <select id="containerName" class="containerDropDown" style="background:rgb(255, 255, 255)">
+                    <option name="containerType" value="">Select container:</option>
+                    <option name="containerType" value="Plain Cone">Plain Cone</option>
+                    <option name="containerType" value="Sugar Cone">Sugar Cone</option>
+                    <option name="containerType" value="Paper Cup">Paper Cup</option>
+
+                </select>
+            </div>
+            <div class="col-4">
+                <button class="button-primary SelectBtn" type="button"
+                    style="background-color:rgb(255, 255, 255)">Select Toppings:</button>
+                <div class="toppings">
+                    <div class="top">
+                        <label style="color:rgb(0, 0, 0)">Crumbed Peanuts<input type="checkbox" class="toppers" value="Crumbed Peanuts"><span class="checkmark"></span></label></li>
+                        <li> <label style="color:rgb(0, 0, 0)">Chocolate Dip<input type="checkbox" class="toppers" value="Chocolate Dip"><span class="checkmark"></span></label></li>
+                        <li> <label style="color:rgb(0, 0, 0)">Caramel Dip<input type="checkbox" class="toppers" value="Caramel Dip"><span class="checkmark"></span></label></li>
+                        <li> <label style="color:rgb(0, 0, 0)">Smarties<input type="checkbox" class="toppers" value="Smarties"><span class="checkmark"></span></label></li>
+                        <li> <label style="color:rgb(0, 0, 0)">Oreos<input type="checkbox" class="toppers" value="Oreos"><span class="checkmark"></span></label></li>
+                        <li> <label style="color:rgb(0, 0, 0)">Astros<input type="checkbox" class="toppers" value="Astros"><span class="checkmark"></span></label></li>
+                        <li> <label style="color:rgb(0, 0, 0)">Jelly Babies<input type="checkbox" class="toppers" value="Jelly Babies"><span class="checkmark"></span></label></li>
+                        <li> <label style="color:rgb(0, 0, 0)">Rainbow Sprinkles<input type="checkbox" class="toppers" value="Rainbow Sprinkles"><span class="checkmark"></span></label></li>
+
+                        <div>
+                            <button class="button-primary addBtn" type="button">Add Toppings</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="center" style="margin-top:100px">
+            <button class="button-primary getPriceBtn" type="button">Get Price</button>
+            <strong style="color:rgb(0, 0, 0)">Total:</strong>
+            <span class=""><span class="Total" style="color:rgb(0, 0, 0)">0</span></span>
+        </div>
+
+    </div>
+
+</body>
+<script src="Ice-Factory.js" charset="utf-8"></script>
+<script src="Ice-dom.js" charset="utf-8"></script>
+
+</html>
